@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F95075951920EB6A00314D0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95075941920EB6A00314D0D /* Foundation.framework */; };
+		F95075971920EB6A00314D0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95075961920EB6A00314D0D /* CoreGraphics.framework */; };
+		F95075991920EB6A00314D0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95075981920EB6A00314D0D /* UIKit.framework */; };
+		F950759F1920EB6A00314D0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F950759D1920EB6A00314D0D /* InfoPlist.strings */; };
+		F95075A11920EB6A00314D0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F95075A01920EB6A00314D0D /* main.m */; };
+		F95075A51920EB6A00314D0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F95075A41920EB6A00314D0D /* AppDelegate.m */; };
+		F95075A81920EB6A00314D0D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95075A61920EB6A00314D0D /* Main_iPad.storyboard */; };
+		F95075AB1920EB6A00314D0D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95075AA1920EB6A00314D0D /* MasterViewController.m */; };
+		F95075AE1920EB6A00314D0D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95075AD1920EB6A00314D0D /* DetailViewController.m */; };
+		F95075B01920EB6A00314D0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95075AF1920EB6A00314D0D /* Images.xcassets */; };
+		F95075B71920EB6A00314D0D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95075B61920EB6A00314D0D /* XCTest.framework */; };
+		F95075B81920EB6A00314D0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95075941920EB6A00314D0D /* Foundation.framework */; };
+		F95075B91920EB6A00314D0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95075981920EB6A00314D0D /* UIKit.framework */; };
+		F95075C11920EB6A00314D0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F95075BF1920EB6A00314D0D /* InfoPlist.strings */; };
+		F95075C31920EB6A00314D0D /* SQLServerDBCommanderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F95075C21920EB6A00314D0D /* SQLServerDBCommanderTests.m */; };
+		F95075CE1920ED0B00314D0D /* AddSQLServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95075CD1920ED0B00314D0D /* AddSQLServerViewController.m */; };
+		F95075D11920ED4500314D0D /* SQLServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F95075D01920ED4500314D0D /* SQLServer.m */; };
+		F95075D41920EF0400314D0D /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = F95075D31920EF0400314D0D /* Database.m */; };
+		F95075E31920FF2D00314D0D /* libfreetds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F95075D91920FF2D00314D0D /* libfreetds.a */; };
+		F95075E41920FF2D00314D0D /* SQLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F95075DC1920FF2D00314D0D /* SQLClient.m */; };
+		F95075E61921028600314D0D /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F95075E51921028600314D0D /* libiconv.dylib */; };
+		F95075E9192109DB00314D0D /* DatabaseObjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95075E8192109DB00314D0D /* DatabaseObjectsTableViewController.m */; };
+		F95075F21921147100314D0D /* DatabaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F95075F11921147100314D0D /* DatabaseObject.m */; };
+		F9507607192126FC00314D0D /* Column.m in Sources */ = {isa = PBXBuildFile; fileRef = F9507606192126FC00314D0D /* Column.m */; };
+		F950761019212C3C00314D0D /* ObjDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F950760F19212C3C00314D0D /* ObjDetailsTableViewController.m */; };
+		F95076131921378900314D0D /* SPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95076121921378900314D0D /* SPViewController.m */; };
+		F95F009C192B9D4300FB135A /* ForeignKey.m in Sources */ = {isa = PBXBuildFile; fileRef = F95F009B192B9D4300FB135A /* ForeignKey.m */; };
+		F95F009F192BA32000FB135A /* ForeignKeyDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95F009E192BA32000FB135A /* ForeignKeyDetailsTableViewController.m */; };
+		F96D50231922AFBB00364244 /* MMGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F96D501A1922AFBB00364244 /* MMGridCell.m */; };
+		F96D50241922AFBB00364244 /* MMGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F96D501C1922AFBB00364244 /* MMGridLayout.m */; };
+		F96D50251922AFBB00364244 /* MMSpreadsheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F96D501E1922AFBB00364244 /* MMSpreadsheetView.m */; };
+		F96D50261922AFBB00364244 /* MMTopRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F96D50201922AFBB00364244 /* MMTopRowCell.m */; };
+		F96D50271922AFBB00364244 /* NSIndexPath+MMSpreadsheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F96D50221922AFBB00364244 /* NSIndexPath+MMSpreadsheetView.m */; };
+		F9A1CAE0192210C100CD2D56 /* DataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A1CADF192210C100CD2D56 /* DataCollectionViewController.m */; };
+		F9B3EFE919A3A864008B1315 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B3EFE819A3A864008B1315 /* Main_iPhone.storyboard */; };
+		F9B6196A1928F15400631305 /* CustomQueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B619691928F15400631305 /* CustomQueryViewController.m */; };
+		F9B6196D1928F29D00631305 /* CustomQueryDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B6196C1928F29D00631305 /* CustomQueryDataViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F95075BA1920EB6A00314D0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F95075891920EB6A00314D0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F95075901920EB6A00314D0D;
+			remoteInfo = SQLServerDBCommander;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F95075911920EB6A00314D0D /* SQLServerDBCommander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLServerDBCommander.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95075941920EB6A00314D0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F95075961920EB6A00314D0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F95075981920EB6A00314D0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F950759C1920EB6A00314D0D /* SQLServerDBCommander-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SQLServerDBCommander-Info.plist"; sourceTree = "<group>"; };
+		F950759E1920EB6A00314D0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F95075A01920EB6A00314D0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F95075A21920EB6A00314D0D /* SQLServerDBCommander-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLServerDBCommander-Prefix.pch"; sourceTree = "<group>"; };
+		F95075A31920EB6A00314D0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F95075A41920EB6A00314D0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F95075A71920EB6A00314D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		F95075A91920EB6A00314D0D /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		F95075AA1920EB6A00314D0D /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		F95075AC1920EB6A00314D0D /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F95075AD1920EB6A00314D0D /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F95075AF1920EB6A00314D0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F95075B51920EB6A00314D0D /* SQLServerDBCommanderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLServerDBCommanderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95075B61920EB6A00314D0D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F95075BE1920EB6A00314D0D /* SQLServerDBCommanderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SQLServerDBCommanderTests-Info.plist"; sourceTree = "<group>"; };
+		F95075C01920EB6A00314D0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F95075C21920EB6A00314D0D /* SQLServerDBCommanderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLServerDBCommanderTests.m; sourceTree = "<group>"; };
+		F95075CC1920ED0B00314D0D /* AddSQLServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSQLServerViewController.h; sourceTree = "<group>"; };
+		F95075CD1920ED0B00314D0D /* AddSQLServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSQLServerViewController.m; sourceTree = "<group>"; };
+		F95075CF1920ED4500314D0D /* SQLServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLServer.h; sourceTree = "<group>"; };
+		F95075D01920ED4500314D0D /* SQLServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLServer.m; sourceTree = "<group>"; };
+		F95075D21920EF0400314D0D /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		F95075D31920EF0400314D0D /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		F95075D51920FF2D00314D0D /* bkpublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bkpublic.h; sourceTree = "<group>"; };
+		F95075D61920FF2D00314D0D /* cspublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cspublic.h; sourceTree = "<group>"; };
+		F95075D71920FF2D00314D0D /* cstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cstypes.h; sourceTree = "<group>"; };
+		F95075D81920FF2D00314D0D /* ctpublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctpublic.h; sourceTree = "<group>"; };
+		F95075D91920FF2D00314D0D /* libfreetds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfreetds.a; sourceTree = "<group>"; };
+		F95075DA1920FF2D00314D0D /* odbcss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = odbcss.h; sourceTree = "<group>"; };
+		F95075DB1920FF2D00314D0D /* SQLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLClient.h; sourceTree = "<group>"; };
+		F95075DC1920FF2D00314D0D /* SQLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLClient.m; sourceTree = "<group>"; };
+		F95075DD1920FF2D00314D0D /* sqldb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqldb.h; sourceTree = "<group>"; };
+		F95075DE1920FF2D00314D0D /* sqlfront.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlfront.h; sourceTree = "<group>"; };
+		F95075DF1920FF2D00314D0D /* sybdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sybdb.h; sourceTree = "<group>"; };
+		F95075E01920FF2D00314D0D /* syberror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syberror.h; sourceTree = "<group>"; };
+		F95075E11920FF2D00314D0D /* sybfront.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sybfront.h; sourceTree = "<group>"; };
+		F95075E21920FF2D00314D0D /* tds_sysdep_public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tds_sysdep_public.h; sourceTree = "<group>"; };
+		F95075E51921028600314D0D /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		F95075E7192109DB00314D0D /* DatabaseObjectsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseObjectsTableViewController.h; sourceTree = "<group>"; };
+		F95075E8192109DB00314D0D /* DatabaseObjectsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseObjectsTableViewController.m; sourceTree = "<group>"; };
+		F95075F01921147100314D0D /* DatabaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseObject.h; sourceTree = "<group>"; };
+		F95075F11921147100314D0D /* DatabaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseObject.m; sourceTree = "<group>"; };
+		F9507605192126FC00314D0D /* Column.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Column.h; sourceTree = "<group>"; };
+		F9507606192126FC00314D0D /* Column.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Column.m; sourceTree = "<group>"; };
+		F950760E19212C3C00314D0D /* ObjDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjDetailsTableViewController.h; sourceTree = "<group>"; };
+		F950760F19212C3C00314D0D /* ObjDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjDetailsTableViewController.m; sourceTree = "<group>"; };
+		F95076111921378900314D0D /* SPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPViewController.h; sourceTree = "<group>"; };
+		F95076121921378900314D0D /* SPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPViewController.m; sourceTree = "<group>"; };
+		F95F009A192B9D4300FB135A /* ForeignKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeignKey.h; sourceTree = "<group>"; };
+		F95F009B192B9D4300FB135A /* ForeignKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeignKey.m; sourceTree = "<group>"; };
+		F95F009D192BA32000FB135A /* ForeignKeyDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeignKeyDetailsTableViewController.h; sourceTree = "<group>"; };
+		F95F009E192BA32000FB135A /* ForeignKeyDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeignKeyDetailsTableViewController.m; sourceTree = "<group>"; };
+		F96D50191922AFBB00364244 /* MMGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGridCell.h; sourceTree = "<group>"; };
+		F96D501A1922AFBB00364244 /* MMGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGridCell.m; sourceTree = "<group>"; };
+		F96D501B1922AFBB00364244 /* MMGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGridLayout.h; sourceTree = "<group>"; };
+		F96D501C1922AFBB00364244 /* MMGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGridLayout.m; sourceTree = "<group>"; };
+		F96D501D1922AFBB00364244 /* MMSpreadsheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSpreadsheetView.h; sourceTree = "<group>"; };
+		F96D501E1922AFBB00364244 /* MMSpreadsheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSpreadsheetView.m; sourceTree = "<group>"; };
+		F96D501F1922AFBB00364244 /* MMTopRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTopRowCell.h; sourceTree = "<group>"; };
+		F96D50201922AFBB00364244 /* MMTopRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTopRowCell.m; sourceTree = "<group>"; };
+		F96D50211922AFBB00364244 /* NSIndexPath+MMSpreadsheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+MMSpreadsheetView.h"; sourceTree = "<group>"; };
+		F96D50221922AFBB00364244 /* NSIndexPath+MMSpreadsheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+MMSpreadsheetView.m"; sourceTree = "<group>"; };
+		F9A1CADE192210C100CD2D56 /* DataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCollectionViewController.h; sourceTree = "<group>"; };
+		F9A1CADF192210C100CD2D56 /* DataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCollectionViewController.m; sourceTree = "<group>"; };
+		F9B3EFE819A3A864008B1315 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		F9B619681928F15400631305 /* CustomQueryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomQueryViewController.h; sourceTree = "<group>"; };
+		F9B619691928F15400631305 /* CustomQueryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomQueryViewController.m; sourceTree = "<group>"; };
+		F9B6196B1928F29D00631305 /* CustomQueryDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomQueryDataViewController.h; sourceTree = "<group>"; };
+		F9B6196C1928F29D00631305 /* CustomQueryDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomQueryDataViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F950758E1920EB6A00314D0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95075E61921028600314D0D /* libiconv.dylib in Frameworks */,
+				F95075971920EB6A00314D0D /* CoreGraphics.framework in Frameworks */,
+				F95075991920EB6A00314D0D /* UIKit.framework in Frameworks */,
+				F95075951920EB6A00314D0D /* Foundation.framework in Frameworks */,
+				F95075E31920FF2D00314D0D /* libfreetds.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F95075B21920EB6A00314D0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95075B71920EB6A00314D0D /* XCTest.framework in Frameworks */,
+				F95075B91920EB6A00314D0D /* UIKit.framework in Frameworks */,
+				F95075B81920EB6A00314D0D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F95075881920EB6A00314D0D = {
+			isa = PBXGroup;
+			children = (
+				F950759A1920EB6A00314D0D /* SQLServerDBCommander */,
+				F95075BC1920EB6A00314D0D /* SQLServerDBCommanderTests */,
+				F95075931920EB6A00314D0D /* Frameworks */,
+				F95075921920EB6A00314D0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F95075921920EB6A00314D0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F95075911920EB6A00314D0D /* SQLServerDBCommander.app */,
+				F95075B51920EB6A00314D0D /* SQLServerDBCommanderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F95075931920EB6A00314D0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F95075E51921028600314D0D /* libiconv.dylib */,
+				F95075941920EB6A00314D0D /* Foundation.framework */,
+				F95075961920EB6A00314D0D /* CoreGraphics.framework */,
+				F95075981920EB6A00314D0D /* UIKit.framework */,
+				F95075B61920EB6A00314D0D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F950759A1920EB6A00314D0D /* SQLServerDBCommander */ = {
+			isa = PBXGroup;
+			children = (
+				F9B3EFE819A3A864008B1315 /* Main_iPhone.storyboard */,
+				F95075A31920EB6A00314D0D /* AppDelegate.h */,
+				F95075A41920EB6A00314D0D /* AppDelegate.m */,
+				F95075A61920EB6A00314D0D /* Main_iPad.storyboard */,
+				F9B6196B1928F29D00631305 /* CustomQueryDataViewController.h */,
+				F9B6196C1928F29D00631305 /* CustomQueryDataViewController.m */,
+				F9B619681928F15400631305 /* CustomQueryViewController.h */,
+				F9B619691928F15400631305 /* CustomQueryViewController.m */,
+				F95075E7192109DB00314D0D /* DatabaseObjectsTableViewController.h */,
+				F95075E8192109DB00314D0D /* DatabaseObjectsTableViewController.m */,
+				F95076111921378900314D0D /* SPViewController.h */,
+				F95076121921378900314D0D /* SPViewController.m */,
+				F95075CF1920ED4500314D0D /* SQLServer.h */,
+				F95075D01920ED4500314D0D /* SQLServer.m */,
+				F95075D21920EF0400314D0D /* Database.h */,
+				F95075D31920EF0400314D0D /* Database.m */,
+				F95075CC1920ED0B00314D0D /* AddSQLServerViewController.h */,
+				F95075CD1920ED0B00314D0D /* AddSQLServerViewController.m */,
+				F95075A91920EB6A00314D0D /* MasterViewController.h */,
+				F95075AA1920EB6A00314D0D /* MasterViewController.m */,
+				F95075AC1920EB6A00314D0D /* DetailViewController.h */,
+				F95075AD1920EB6A00314D0D /* DetailViewController.m */,
+				F95075AF1920EB6A00314D0D /* Images.xcassets */,
+				F950759B1920EB6A00314D0D /* Supporting Files */,
+				F95075F01921147100314D0D /* DatabaseObject.h */,
+				F95075F11921147100314D0D /* DatabaseObject.m */,
+				F95F009D192BA32000FB135A /* ForeignKeyDetailsTableViewController.h */,
+				F95F009E192BA32000FB135A /* ForeignKeyDetailsTableViewController.m */,
+				F9507605192126FC00314D0D /* Column.h */,
+				F9507606192126FC00314D0D /* Column.m */,
+				F950760E19212C3C00314D0D /* ObjDetailsTableViewController.h */,
+				F950760F19212C3C00314D0D /* ObjDetailsTableViewController.m */,
+				F95F009A192B9D4300FB135A /* ForeignKey.h */,
+				F95F009B192B9D4300FB135A /* ForeignKey.m */,
+				F9A1CADE192210C100CD2D56 /* DataCollectionViewController.h */,
+				F9A1CADF192210C100CD2D56 /* DataCollectionViewController.m */,
+			);
+			path = SQLServerDBCommander;
+			sourceTree = "<group>";
+		};
+		F950759B1920EB6A00314D0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F96D50191922AFBB00364244 /* MMGridCell.h */,
+				F96D501A1922AFBB00364244 /* MMGridCell.m */,
+				F96D501B1922AFBB00364244 /* MMGridLayout.h */,
+				F96D501C1922AFBB00364244 /* MMGridLayout.m */,
+				F96D501D1922AFBB00364244 /* MMSpreadsheetView.h */,
+				F96D501E1922AFBB00364244 /* MMSpreadsheetView.m */,
+				F96D501F1922AFBB00364244 /* MMTopRowCell.h */,
+				F96D50201922AFBB00364244 /* MMTopRowCell.m */,
+				F96D50211922AFBB00364244 /* NSIndexPath+MMSpreadsheetView.h */,
+				F96D50221922AFBB00364244 /* NSIndexPath+MMSpreadsheetView.m */,
+				F95075D51920FF2D00314D0D /* bkpublic.h */,
+				F95075D61920FF2D00314D0D /* cspublic.h */,
+				F95075D71920FF2D00314D0D /* cstypes.h */,
+				F95075D81920FF2D00314D0D /* ctpublic.h */,
+				F95075D91920FF2D00314D0D /* libfreetds.a */,
+				F95075DA1920FF2D00314D0D /* odbcss.h */,
+				F95075DB1920FF2D00314D0D /* SQLClient.h */,
+				F95075DC1920FF2D00314D0D /* SQLClient.m */,
+				F95075DD1920FF2D00314D0D /* sqldb.h */,
+				F95075DE1920FF2D00314D0D /* sqlfront.h */,
+				F95075DF1920FF2D00314D0D /* sybdb.h */,
+				F95075E01920FF2D00314D0D /* syberror.h */,
+				F95075E11920FF2D00314D0D /* sybfront.h */,
+				F95075E21920FF2D00314D0D /* tds_sysdep_public.h */,
+				F950759C1920EB6A00314D0D /* SQLServerDBCommander-Info.plist */,
+				F950759D1920EB6A00314D0D /* InfoPlist.strings */,
+				F95075A01920EB6A00314D0D /* main.m */,
+				F95075A21920EB6A00314D0D /* SQLServerDBCommander-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F95075BC1920EB6A00314D0D /* SQLServerDBCommanderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F95075C21920EB6A00314D0D /* SQLServerDBCommanderTests.m */,
+				F95075BD1920EB6A00314D0D /* Supporting Files */,
+			);
+			path = SQLServerDBCommanderTests;
+			sourceTree = "<group>";
+		};
+		F95075BD1920EB6A00314D0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F95075BE1920EB6A00314D0D /* SQLServerDBCommanderTests-Info.plist */,
+				F95075BF1920EB6A00314D0D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F95075901920EB6A00314D0D /* SQLServerDBCommander */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F95075C61920EB6A00314D0D /* Build configuration list for PBXNativeTarget "SQLServerDBCommander" */;
+			buildPhases = (
+				F950758D1920EB6A00314D0D /* Sources */,
+				F950758E1920EB6A00314D0D /* Frameworks */,
+				F950758F1920EB6A00314D0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLServerDBCommander;
+			productName = SQLServerDBCommander;
+			productReference = F95075911920EB6A00314D0D /* SQLServerDBCommander.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F95075B41920EB6A00314D0D /* SQLServerDBCommanderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F95075C91920EB6A00314D0D /* Build configuration list for PBXNativeTarget "SQLServerDBCommanderTests" */;
+			buildPhases = (
+				F95075B11920EB6A00314D0D /* Sources */,
+				F95075B21920EB6A00314D0D /* Frameworks */,
+				F95075B31920EB6A00314D0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F95075BB1920EB6A00314D0D /* PBXTargetDependency */,
+			);
+			name = SQLServerDBCommanderTests;
+			productName = SQLServerDBCommanderTests;
+			productReference = F95075B51920EB6A00314D0D /* SQLServerDBCommanderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F95075891920EB6A00314D0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Akshay Srinivasan";
+				TargetAttributes = {
+					F95075901920EB6A00314D0D = {
+						DevelopmentTeam = S3963LZHDS;
+					};
+					F95075B41920EB6A00314D0D = {
+						TestTargetID = F95075901920EB6A00314D0D;
+					};
+				};
+			};
+			buildConfigurationList = F950758C1920EB6A00314D0D /* Build configuration list for PBXProject "SQLServerDBCommander" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F95075881920EB6A00314D0D;
+			productRefGroup = F95075921920EB6A00314D0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F95075901920EB6A00314D0D /* SQLServerDBCommander */,
+				F95075B41920EB6A00314D0D /* SQLServerDBCommanderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F950758F1920EB6A00314D0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B3EFE919A3A864008B1315 /* Main_iPhone.storyboard in Resources */,
+				F95075B01920EB6A00314D0D /* Images.xcassets in Resources */,
+				F950759F1920EB6A00314D0D /* InfoPlist.strings in Resources */,
+				F95075A81920EB6A00314D0D /* Main_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F95075B31920EB6A00314D0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95075C11920EB6A00314D0D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F950758D1920EB6A00314D0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9507607192126FC00314D0D /* Column.m in Sources */,
+				F95075A51920EB6A00314D0D /* AppDelegate.m in Sources */,
+				F95075AB1920EB6A00314D0D /* MasterViewController.m in Sources */,
+				F95076131921378900314D0D /* SPViewController.m in Sources */,
+				F95F009F192BA32000FB135A /* ForeignKeyDetailsTableViewController.m in Sources */,
+				F95075E9192109DB00314D0D /* DatabaseObjectsTableViewController.m in Sources */,
+				F95075D41920EF0400314D0D /* Database.m in Sources */,
+				F96D50261922AFBB00364244 /* MMTopRowCell.m in Sources */,
+				F95075CE1920ED0B00314D0D /* AddSQLServerViewController.m in Sources */,
+				F96D50241922AFBB00364244 /* MMGridLayout.m in Sources */,
+				F95075F21921147100314D0D /* DatabaseObject.m in Sources */,
+				F9B6196A1928F15400631305 /* CustomQueryViewController.m in Sources */,
+				F9B6196D1928F29D00631305 /* CustomQueryDataViewController.m in Sources */,
+				F9A1CAE0192210C100CD2D56 /* DataCollectionViewController.m in Sources */,
+				F95075D11920ED4500314D0D /* SQLServer.m in Sources */,
+				F96D50271922AFBB00364244 /* NSIndexPath+MMSpreadsheetView.m in Sources */,
+				F95075E41920FF2D00314D0D /* SQLClient.m in Sources */,
+				F95F009C192B9D4300FB135A /* ForeignKey.m in Sources */,
+				F95075A11920EB6A00314D0D /* main.m in Sources */,
+				F96D50251922AFBB00364244 /* MMSpreadsheetView.m in Sources */,
+				F950761019212C3C00314D0D /* ObjDetailsTableViewController.m in Sources */,
+				F96D50231922AFBB00364244 /* MMGridCell.m in Sources */,
+				F95075AE1920EB6A00314D0D /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F95075B11920EB6A00314D0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95075C31920EB6A00314D0D /* SQLServerDBCommanderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F95075BB1920EB6A00314D0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F95075901920EB6A00314D0D /* SQLServerDBCommander */;
+			targetProxy = F95075BA1920EB6A00314D0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F950759D1920EB6A00314D0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F950759E1920EB6A00314D0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F95075A61920EB6A00314D0D /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F95075A71920EB6A00314D0D /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		F95075BF1920EB6A00314D0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F95075C01920EB6A00314D0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F95075C41920EB6A00314D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F95075C51920EB6A00314D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F95075C71920EB6A00314D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SQLServerDBCommander/SQLServerDBCommander-Prefix.pch";
+				INFOPLIST_FILE = "SQLServerDBCommander/SQLServerDBCommander-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SQLServerDBCommander",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a538683f-ac04-47bc-a852-44cead8325dc";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F95075C81920EB6A00314D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SQLServerDBCommander/SQLServerDBCommander-Prefix.pch";
+				INFOPLIST_FILE = "SQLServerDBCommander/SQLServerDBCommander-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SQLServerDBCommander",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a538683f-ac04-47bc-a852-44cead8325dc";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F95075CA1920EB6A00314D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SQLServerDBCommander.app/SQLServerDBCommander";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SQLServerDBCommander/SQLServerDBCommander-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SQLServerDBCommanderTests/SQLServerDBCommanderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F95075CB1920EB6A00314D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SQLServerDBCommander.app/SQLServerDBCommander";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SQLServerDBCommander/SQLServerDBCommander-Prefix.pch";
+				INFOPLIST_FILE = "SQLServerDBCommanderTests/SQLServerDBCommanderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F950758C1920EB6A00314D0D /* Build configuration list for PBXProject "SQLServerDBCommander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F95075C41920EB6A00314D0D /* Debug */,
+				F95075C51920EB6A00314D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F95075C61920EB6A00314D0D /* Build configuration list for PBXNativeTarget "SQLServerDBCommander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F95075C71920EB6A00314D0D /* Debug */,
+				F95075C81920EB6A00314D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F95075C91920EB6A00314D0D /* Build configuration list for PBXNativeTarget "SQLServerDBCommanderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F95075CA1920EB6A00314D0D /* Debug */,
+				F95075CB1920EB6A00314D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F95075891920EB6A00314D0D /* Project object */;
+}
